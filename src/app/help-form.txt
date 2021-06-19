@@ -1,0 +1,8 @@
+O Angular tem um módulo exclusivo para manutenção e tratativa de formulários, para utiliza-lo:
+    - temos que fazer a importação desse modulo no modulo onde nosso componente está declarado
+    - Após a importação do módulo, devemos realizar a importação de seus componentes no componente de nossa escolha
+        - Entre esses componenentes temos o FormBuilder, responsável por definirmos os campos do formulário
+        - Temos o FormGroup responsável pelo type da nossa váriavel que receberá os campos definidos pelo FormBuilder
+        - Temos os Validators que servem para colocarmos validações nos campos definidos pelo FormBuilder
+    - Vale ressaltar que além dessas importações no arquivo ts, ainda temos que relizar o vinculo do form criado com o 
+    elemento de form criado no HTML 

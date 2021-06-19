@@ -1,0 +1,29 @@
+import { Component } from '@angular/core'; // necessário para a criação de um componente 
+
+// decorator, estou gerando metadados para essa classe que está sendo exportada
+@Component({
+  selector: 'app-root', // seletor: o mesmo se torna uma tag html <app-root></app-root>
+  templateUrl: './app.component.html', // importação do arquivo com o html do componente
+  // template: '<p> meu template </p>', podemos ter essa forma de declarar o html tbm
+  styleUrls: ['./app.component.css'] // array onde é definido todos os css desse componente
+})
+export class AppComponent { // export para tornar a classe publica e poder importar esse componente em outros locais
+}
+
+Para chamar variaveis dentro do arquivo html, basta eu colocar o nome da variavel dentro de {{ title }}
+
+Exemplo do ngFor no html
+    <li *ngFor="let todo of todos" >{{ todo }}</li>
+
+Exemplo do ngIf no html
+    <button *ngIf="!todo.done" >Concluir</button>
+
+() = HTML > TS do html para o ts
+[] = TS > HTML do ts para o html
+[()] = TS <> HTML para ambos os lados
+
+Exemplo de bind () HTML > TS
+    <button (click)="remove()" >Remover</button> Percebe-se que o evento é disparado pelo HTML e com isso chamamos uma função que foi criada no TS
+
+Exemplo de bind [] JS > HTML
+    <form [formGroup]="form"> Percebe-se que é passado uma variavel criada no TS para o componente HTML

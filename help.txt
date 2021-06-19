@@ -1,0 +1,10 @@
+a aplicação funcionado a seguinte forma:
+ - dentro de src/ é chamado o primeiro arquivo main.ts
+ - o main.ts chama o ./app/app.module.ts
+ - e o ./app/app.module.ts chama o ./app/app.component.ts
+ - que por sua vez tem a definição de um componente e suas inportações 
+
+um componente no Angular é composto por um arquivo .ts um arquivo .html e um arquivo .css ou .scss, o spec.ts é um arquivo de testes
+ - o comportamento desse componente é definido dentro do arquivo .ts
+ - onde ele tem a view que é entregue pelo arquivo .html
+ - e os estilos que são entregues pelo arquivo .css
